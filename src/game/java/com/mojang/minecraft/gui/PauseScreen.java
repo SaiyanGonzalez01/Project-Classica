@@ -9,7 +9,7 @@ public final class PauseScreen extends GuiScreen {
 		this.buttons.add(new Button(0, this.width / 2 - 100, this.height / 4, "Options..."));
 		this.buttons.add(new Button(1, this.width / 2 - 100, this.height / 4 + 24, "Generate new level..."));
 		this.buttons.add(new Button(3, this.width / 2 - 100, this.height / 4 + 48, "Multiplayer..."));
-		this.buttons.add(new Button(2, this.width / 2 - 100, this.height / 4 + 72, "Character Select"));
+		this.buttons.add(new Button(0, this.width / 2 - 100, this.height / 4 + 72, "Character Select"));
 		this.buttons.add(new Button(4, this.width / 2 - 100, this.height / 4 + 120, "Back to game"));
 
 		if (this.minecraft.networkManager != null) {
@@ -29,10 +29,6 @@ public final class PauseScreen extends GuiScreen {
 			this.minecraft.setCurrentScreen(new GenerateLevelScreen(this));
 		}
 		
-		if (var1.id == 2) {
-			this.minecraft.setCurrentScreen(new GuiCharacterSelect(this));
-		}
-	
 		if (var1.id == 3) {
 			this.minecraft.setCurrentScreen(new MultiplayerMenu());
 		}
