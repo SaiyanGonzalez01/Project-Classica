@@ -4,7 +4,7 @@ import org.lwjgl.opengl.GL11;
 
 import net.peyton.eagler.level.LevelUtils;
 
-public final class CharacterSelect extends GuiScreen {
+public final class GuiCharacterSelect extends GuiScreen {
 
 	public final void onOpen() {
 		this.buttons.clear();
